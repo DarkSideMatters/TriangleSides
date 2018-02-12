@@ -12,11 +12,11 @@ class triangleCheck {
     private static void checkTriangle(){
         if (aSide <= 0 || bSide <= 0 || cSide <= 0) {
             System.out.println("Not a valid triangle!");
-        } else if (aSide + bSide < cSide || aSide + cSide < bSide || bSide + cSide < aSide) {
+        } else if (aSide + bSide <= cSide || aSide + cSide <= bSide || bSide + cSide <= aSide) {
             System.out.println("Not a valid triangle!");
         } else if(aSide==bSide && aSide == cSide){
             System.out.println("Equilateral triangle.");
-        } else if((aSide==bSide && aSide!=cSide )||(bSide== cSide&& bSide!=aSide)||(aSide==cSide && aSide!=bSide) ){
+        } else if((aSide==bSide && aSide!=cSide )||(bSide==cSide && bSide!=aSide)||(aSide==cSide && aSide!=bSide) ){
             System.out.println("Isosceles triangle.");
         }else{
             System.out.println("Scalene triangle.");

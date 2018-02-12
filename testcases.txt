@@ -1,3 +1,5 @@
+https://github.com/DarkSideMatters/TriangleSides
+Tests cases added.
 test 1:
 Input:  1 1 1
 Output: equilateral
