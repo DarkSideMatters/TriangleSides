@@ -1,0 +1,35 @@
+test 1:
+Input:  1 1 1
+Output: equilateral
+
+test 2:
+Input: 5 6 5
+Output: isosceles
+
+test 3:
+Input 3 4 5
+Output: scalene
+
+test 4:
+Input: 4 4 5
+Output: isosceles
+
+test 5:
+Input a 2 c
+Output: not valid
+
+test 6:
+Input: -10 10 10
+Output: not valid
+
+test 7:
+Input 100 2 3
+Output: not valid
+
+test 8:
+Input: 5.5 5.6 5.7
+Output: scalene
+
+test 9:
+Input 0 0 0
+Output: not valid
