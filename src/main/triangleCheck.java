@@ -1,7 +1,9 @@
+package main;
+
 import java.util.Scanner;
 
 
-class triangleCheck {
+public class triangleCheck {
 
     private static float aSide = 0, bSide = 0, cSide = 0;
     public static void main(String[] args) {
@@ -33,16 +35,21 @@ class triangleCheck {
         System.out.println("c number:");
         String input3 = scanner.next();
 
-        checkIfNumbersAreValid(input1,input2,input3);
-    }
-
-    private static void checkIfNumbersAreValid(String input1, String input2, String input3){
-        try {
+        if(checkIfNumbersAreValid(input1,input2,input3)){
             aSide = Integer.parseInt(input1);
             bSide = Integer.parseInt(input2);
             cSide = Integer.parseInt(input3);
-        } catch (NumberFormatException ignored) {
+        }
+    }
 
+    public static boolean checkIfNumbersAreValid(String input1, String input2, String input3){
+        try {
+            Integer.parseInt(input1);
+            Integer.parseInt(input2);
+            Integer.parseInt(input3);
+            return true;
+        } catch (NumberFormatException ignored) {
+            return false;
         }
     }
 }
